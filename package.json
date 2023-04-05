@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx --watch src/index.ts",
+    "dev": "tsx src/index.ts",
+    "dev:watch": "tsx --watch src/index.ts",
+    "start": "node dist/index.js",
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "devDependencies": {
